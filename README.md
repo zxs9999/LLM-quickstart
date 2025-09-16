@@ -91,7 +91,8 @@ ffmpeg -version
 参考：[音频工具包 ffmpeg 官方安装文档](https://phoenixnap.com/kb/install-ffmpeg-ubuntu)
 
 
-### 安装 Python 环境管理工具 Miniconda
+### 安装 Python 环境管理工具 Miniconda,如果是在wsl上安装
+需要将Miniconda3-latest-Linux-x86_64.sh拷贝到wsl的linux本地路径，不能在/mnt中直接安装
 
 ```shell
 mkdir -p ./miniconda3
