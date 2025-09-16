@@ -154,7 +154,7 @@ $ sudo apt install net-tools
 ```
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 ```python
-http://ip:8000/lab
+ip:8000/lab
 ---
 
 ### 关于 LangChain 调用 OpenAI GPT API 的配置
