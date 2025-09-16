@@ -40,7 +40,7 @@ git clone https://github.com/zxs9999/LLM-quickstart.git
 
 ### 安装 CUDA Toolkit 和 GPU 驱动
 
-根据你的实际情况，找到对应的 [CUDA 12.04](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)：
+根据你的实际情况，找到对应的 [CUDA 12.04](https://developer.nvidia.com/cuda-12-4-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)：
 
 下载并安装 CUDA 12.4 Toolkit（包含GPU驱动）：
 
