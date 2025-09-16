@@ -21,7 +21,7 @@
 你可以通过克隆此仓库到 GPU 服务器来开始学习：
 
 ```shell
-git clone https://github.com/DjangoPeng/LLM-quickstart.git
+git clone https://github.com/zxs9999/LLM-quickstart.git
 ```
 
 ## 搭建开发环境
