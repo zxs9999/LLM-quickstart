@@ -97,13 +97,13 @@ ffmpeg -version
 mkdir -p ./miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ./miniconda3/miniconda.sh
 bash ./miniconda3/miniconda.sh -b -u -p ./miniconda3
-rm -rf ~/miniconda3/miniconda.sh
+rm -rf ./miniconda3/miniconda.sh
 ```
 
 安装完成后，建议新建一个 Python 虚拟环境，命名为 `peft`。
 
 ```shell
-conda create -n peft python=3.10
+conda create -n peft python=3.11
 
 # 激活环境
 conda activate peft 
