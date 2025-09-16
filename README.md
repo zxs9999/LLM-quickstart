@@ -146,7 +146,7 @@ c.ServerApp.ip = '*'
 
 使用 nohup 后台启动 Jupyter Lab
 ```shell
-$ nohup jupyter lab --port=8000 --NotebookApp.token='替换为你的密码' --notebook-dir=./ &
+$ nohup jupyter lab --port=8000 --NotebookApp.token='111111替换为你的密码' --notebook-dir=./ &
 ```
 如果使用wsl需要安装ifconfig
 ```shell
