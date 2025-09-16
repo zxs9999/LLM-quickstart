@@ -148,7 +148,10 @@ c.ServerApp.ip = '*'
 ```shell
 $ nohup jupyter lab --port=8000 --NotebookApp.token='替换为你的密码' --notebook-dir=./ &
 ```
-
+如果使用wsl需要安装ifconfig
+```shell
+$ sudo apt install net-tools
+```shell
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 
 
