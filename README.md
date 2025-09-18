@@ -108,16 +108,21 @@ curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-lates
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-安装完成后，建议新建一个 Python 虚拟环境，命名为 `peft`。
-
+安装完成后，建议新建一个 Python 虚拟环境，命名为 `transformer`。
 ```shell
-conda create -n peft python=3.11
-
-# 激活环境
-conda activate peft 
+conda create -n transformer python=3.11
+```
+#关闭默认环境，Conda 安装后默认会创建一个名为 base 的基础环境
+```shell
+conda config --set auto_activate_base false
+```
+#在bashrc中最后，增加 conda activate transformer  ，启动后会自动激活transformer这个python环境
+```shell
+vi ~/.bashrc
 ```
 
-之后每次使用需要激活此环境。
+
+
 
 
 ### 安装 Python 依赖软件包
