@@ -34,8 +34,24 @@ sudo update-alternatives --config python
 python --version
 ```
 ## GCC
-GCC需要使用
-
+GCC需要使用12
+### 查看GCC版本号
+```bash
+gcc --version
+```
+### 安装gcc-12、g+±12
+```bash
+#更新系统、内核等
+sudo apt-get -y update && sudo apt-get -y upgrade && apt list --upgradable && sudo apt autoremove
+# 安装常用工具
+sudo apt -y install lsb-release openssh-server vim jq net-tools git expect dkms autoconf nmon ansible screen
+# 查看系统版本号信息
+sudo uname -a && cat /proc/version && lsb_release -a && cat /etc/*release
+# 安装gcc
+sudo apt install -y gcc-12 g++-12
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 12 --slave /usr/bin/g++ g++ /usr/bin/g++-12 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
+sudo update-alternatives --config gcc
+```
 ## Miniconda
 Miniconda 是一个 Python 环境管理工具，可以用来创建、管理多个 Python 环境。它是 Anaconda 的轻量级替代品，不包含任何 IDE 工具。 Miniconda可以从[官网](https://docs.conda.io/en/latest/miniconda.html)下载安装包。也可以从镜像网站下载：
 
