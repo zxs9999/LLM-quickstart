@@ -145,7 +145,7 @@ conda install -c conda-forge jupyterlab
 使用 Jupyter Lab 开发的最佳实践是后台常驻，下面是相关配置（以 root 用户为例）：
 
 ```shell
-# 生成 Jupyter Lab 配置文件，默认路劲/当前用户/.jupyter/jupyter_lab_config.py，例如/root/.jupyter/jupyter_lab_config.py
+# 生成 Jupyter Lab 配置文件，默认路劲/当前用户/.jupyter/jupyter_lab_config.py，例如/root/.jupyter/jupyter_lab_config.py 或者/home/jack/.jupyter/jupyter_lab_config.py
 jupyter lab --generate-config
 ```
 
