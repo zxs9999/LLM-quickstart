@@ -148,12 +148,13 @@ c.ServerApp.ip = '*'
 ```shell
 $ nohup jupyter lab --port=8000 --NotebookApp.token='111111替换为你的密码' --notebook-dir=./ &
 ```
+Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
+http://ip:8000/lab
+
 如果使用wsl需要安装ifconfig
 ```shell
 $ sudo apt install net-tools
 ```
-Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
-http://ip:8000/lab
 
 保证wsl通过windows11代理上网配置，可以创建C:\Users\Administrator\.wslconfig(注意有.)，强制网络一致，通过127.0.0.1可以访问wsl子系统的jupyter服务。
 
@@ -165,6 +166,35 @@ dnsTunneling=true # 优化 DNS 解析
 firewall=true # 启用防火墙集成
 ```
 
+需要安装pytorch
+Transformers需要使用pytorch进行实际的模型推理，需要配置的pytorch和conda-forge镜像源：
+1. 为了加速包下载，可以配置使用国内的镜像源：
+```bash
+# 配置清华镜像
+$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+$ conda config --set show_channel_urls yes
+# 查看~/.condarc配置
+$ conda config --show-sources
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+show_channel_urls: True
+```
+可以使用下命令安装和CUDA版本对应的Pytorch版本
+# Linux
+# CUDA 11.8
+(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c nvidia
+# CUDA 12.1
+(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c nvidia
+
+# Mac
+(transformers) $ conda install pytorch::pytorch torchvision torchaudio
 ### 关于 LangChain 调用 OpenAI GPT API 的配置
 
 为了使用OpenAI API，你需要从OpenAI控制台获取一个API密钥。一旦你有了密钥，你可以将其设置为环境变量：
