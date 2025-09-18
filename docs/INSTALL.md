@@ -1,6 +1,8 @@
 # Transformers开发环境搭建
 ## 介绍
 开发环境搭建包含几个部分
+- Python3.11
+- GCC
 - Miniconda
 - Jupyter Lab
 - Hugging Face Transformers，需要尝试多种模型时候，建议tensorflow和pytorch都安装
