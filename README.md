@@ -94,11 +94,18 @@ ffmpeg -version
 ### 安装 Python 环境管理工具 Miniconda
 如果是在wsl上安装，需要将Miniconda3-latest-Linux-x86_64.sh拷贝到wsl的linux本地路径，不能在/mnt中直接安装
 
+
+# 下载 Miniconda 安装包
 ```shell
-mkdir -p ./miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ./miniconda3/miniconda.sh
-bash ./miniconda3/miniconda.sh -b -u -p ./miniconda3
-rm -rf ./miniconda3/miniconda.sh
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+# 也可以使用curl命令下载，不行用浏览器直接下，拷贝到wsl里面
+```shell
+curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+# 安装 Miniconda
+```shell
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 安装完成后，建议新建一个 Python 虚拟环境，命名为 `peft`。
