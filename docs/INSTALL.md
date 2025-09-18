@@ -41,7 +41,7 @@ gcc --version
 ```
 ### 安装gcc-12、g+±12
 ```bash
-#更新系统、内核等
+# 更新系统、内核等
 sudo apt-get -y update && sudo apt-get -y upgrade && apt list --upgradable && sudo apt autoremove
 # 安装常用工具
 sudo apt -y install lsb-release openssh-server vim jq net-tools git expect dkms autoconf nmon ansible screen
