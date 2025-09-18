@@ -7,7 +7,7 @@
 - Jupyter Lab
 - Hugging Face Transformers，需要尝试多种模型时候，建议tensorflow和pytorch都安装
 - 其他依赖包
-## Python
+### Python
 # Python需要使用3.11.X
 确保系统软件包是最新的，并添加 deadsnakes PPA 源以获取最新的 Python 版本
 ```bash
@@ -33,7 +33,7 @@ sudo update-alternatives --config python
 ```bash
 python --version
 ```
-## GCC
+### GCC
 GCC需要使用
 
 ## Miniconda
