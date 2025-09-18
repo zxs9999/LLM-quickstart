@@ -1,12 +1,17 @@
 # Transformers开发环境搭建
 ## 介绍
 开发环境搭建包含几个部分
-- Python3.11
+- Python
 - GCC
 - Miniconda
 - Jupyter Lab
 - Hugging Face Transformers，需要尝试多种模型时候，建议tensorflow和pytorch都安装
 - 其他依赖包
+## Python
+Python需要使用3.11.X
+
+## GCC
+GCC需要使用
 
 ## Miniconda
 Miniconda 是一个 Python 环境管理工具，可以用来创建、管理多个 Python 环境。它是 Anaconda 的轻量级替代品，不包含任何 IDE 工具。 Miniconda可以从[官网](https://docs.conda.io/en/latest/miniconda.html)下载安装包。也可以从镜像网站下载：
