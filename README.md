@@ -155,6 +155,15 @@ $ sudo apt install net-tools
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 http://ip:8000/lab
 
+保证wsl通过windows11代理上网配置，可以创建C:\Users\Administrator\.wslconfig(注意有.)，强制网络一致，通过127.0.0.1可以访问wsl子系统的jupyter服务。
+
+```shell
+[wsl2]
+networkingMode=mirrored # 强制共享 Windows 网络
+autoProxy=true # 自动同步 Windows 代理
+dnsTunneling=true # 优化 DNS 解析
+firewall=true # 启用防火墙集成
+```
 
 ### 关于 LangChain 调用 OpenAI GPT API 的配置
 
