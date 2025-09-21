@@ -146,8 +146,8 @@ Transformers需要使用pytorch进行实际的模型推理，在前面已经配�
 # Linux
 # CUDA 11.8
 (transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c nvidia
-# CUDA 12.1
-(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c nvidia
+# CUDA 12.9
+(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=12.9 -c nvidia
 # CUDA 12.9
 (transformers) $ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu129
 # Mac
