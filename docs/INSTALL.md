@@ -61,7 +61,7 @@ Miniconda 是一个 Python 环境管理工具，可以用来创建、管理多�
 $ wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 也可以使用curl命令下载
 $ curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
-# 安装 Miniconda
+# 安装 Miniconda，安装后重启系统
 $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
