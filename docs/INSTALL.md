@@ -88,6 +88,9 @@ conda config --set show_channel_urls yes
 查看~/.condarc配置
 ```bash
 conda config --show-sources
+```
+结果
+```bash
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
