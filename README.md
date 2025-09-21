@@ -158,14 +158,14 @@ c.ServerApp.ip = '*'
 
 使用 nohup 后台启动 Jupyter Lab
 ```shell
-$ nohup jupyter lab --port=8000 --NotebookApp.token='111111替换为你的密码' --notebook-dir=./ &
+nohup jupyter lab --port=8000 --NotebookApp.token='111111替换为你的密码' --notebook-dir=./ &
 ```
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 http://ip:8000/lab
 
 如果使用wsl需要安装ifconfig
 ```shell
-$ sudo apt install net-tools
+sudo apt install net-tools
 ```
 
 保证wsl通过windows11代理上网配置，可以创建C:\Users\Administrator\.wslconfig(注意有.)，强制网络一致，通过127.0.0.1可以访问wsl子系统的jupyter服务。
