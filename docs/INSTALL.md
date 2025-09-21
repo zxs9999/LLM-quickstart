@@ -79,13 +79,15 @@ Miniconda的配置文件存放在~/.condarc，可以参考文档手工修改，�
 1. 为了加速包下载，可以配置使用国内的镜像源：
 ```bash
 # 配置清华镜像
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-$ conda config --set show_channel_urls yes
-# 查看~/.condarc配置
-$ conda config --show-sources
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --set show_channel_urls yes
+```
+查看~/.condarc配置
+```bash
+conda config --show-sources
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
