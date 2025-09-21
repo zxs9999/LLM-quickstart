@@ -58,11 +58,11 @@ Miniconda 是一个 Python 环境管理工具，可以用来创建、管理多�
 ### Miniconda环境的安装
 ```bash
 # 下载 Miniconda 安装包
-$ wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 也可以使用curl命令下载
-$ curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # 安装 Miniconda，安装后重启系统
-$ bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 安装过程中，需要回答一些问题，如安装路径、是否将 Miniconda 添加到环境变量等。安装完成后，需要重启终端，使环境变量生效。
@@ -70,7 +70,7 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 可以使用以下命令来验证 Miniconda 是否安装成功：
 
 ```bash
-$ conda --version
+conda --version
 ```
 
 ### 配置Miniconda
@@ -108,9 +108,9 @@ show_channel_urls: True
 可以使用mamba或micromamba来代替conda，这两个工具都是conda的替代品，会缓存包的版本信息，不需要在每次安装包的时候都去检查，这种可以有效提高conda-forge这种比较大的。安装mamba或micromamba的方法如下：
 ```bash
 # 安装mamba
-$ conda install -n base -c conda-forge mamba
+conda install -n base -c conda-forge mamba
 # 安装micromamba
-$ conda install -n base -c conda-forge micromamba
+conda install -n base -c conda-forge micromamba
 ```
 之后可以使用mamba或者micromamba命令代替conda命令。
 
