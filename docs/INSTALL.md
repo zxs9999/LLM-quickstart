@@ -91,6 +91,11 @@ conda config --show-sources
 ```
 结果
 ```bash
+==> /home/jack/miniconda3/.condarc <==
+channels:
+  - defaults
+
+==> /home/jack/.condarc <==
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
