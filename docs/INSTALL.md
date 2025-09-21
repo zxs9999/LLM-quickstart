@@ -119,7 +119,7 @@ conda install -n base -c conda-forge micromamba
 # 创建虚拟环境，指定 Python 版本为 3.11
 (base) $ conda create -n transformers python=3.11
 # 激活 openai 环境
-$ conda activate transformers
+(base) $ conda activate transformers
 ```
 以下若无特殊说明，均在这里新建的openai环境中进行。
 
