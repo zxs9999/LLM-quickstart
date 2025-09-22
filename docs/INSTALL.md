@@ -169,3 +169,7 @@ Transformers需要使用pytorch进行实际的模型推理，在前面已经配�
 # 或者
 pip install ipywidgets
 ```
+安装 Python 相关依赖软件包，requirements.txt在项目里
+```bash
+pip install -r requirements.txt
+```
