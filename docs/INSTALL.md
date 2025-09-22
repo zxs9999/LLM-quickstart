@@ -164,4 +164,8 @@ Transformers需要使用pytorch进行实际的模型推理，在前面已经配�
 
 ```bash
 (transformers) $ conda install tqdm iprogress ffmpeg ffmpeg-python pillow
+# 安装ipywidgets
+(transformers) $ conda install -c conda-forge ipywidgets
+# 或者
+pip install ipywidgets
 ```
