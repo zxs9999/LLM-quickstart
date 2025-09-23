@@ -163,9 +163,9 @@ nohup jupyter lab --port=8000 --NotebookApp.token='111111替换为你的密码' 
 Jupyter Lab 输出的日志将会保存在 `nohup.out` 文件（已在 .gitignore中过滤）。
 http://ip:8000/lab
 
-如果使用wsl需要安装ifconfig
+在linux中执行以下命令，保证ipynb都是信任文件
 ```shell
-sudo apt install net-tools
+jupyter trust **/*.ipynb
 ```
 
 保证wsl通过windows11代理上网配置，可以创建C:\Users\Administrator\.wslconfig(注意有.)，强制网络一致，通过127.0.0.1可以访问wsl子系统的jupyter服务。
@@ -206,9 +206,8 @@ show_channel_urls: True
 # Linux
 # CUDA 11.8
 (transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c nvidia
-# CUDA 12.1
-(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c nvidia
-
+# CUDA 12.6
+(transformers) $ conda install pytorch torchvision torchaudio pytorch-cuda=12.6 -c nvidia
 # Mac
 (transformers) $ conda install pytorch::pytorch torchvision torchaudio
 ### 关于 LangChain 调用 OpenAI GPT API 的配置
